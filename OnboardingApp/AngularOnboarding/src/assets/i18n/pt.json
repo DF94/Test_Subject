@@ -1,0 +1,13 @@
+{
+    "Title": "IPN LIS - Tarefa de Onboarding",
+    "Hello": "Olá ",
+    "ProjectsTitle": "Projetos",
+    "logout": "Terminar Sessão",
+    "ProjectId":"ID Projeto",
+    "ProjectName":"Nome Projeto",
+    "ProjectBudget":"Orçamento Projeto",
+    "ProjectOptions":"Opções",
+    "ProjectOptionsShowTasks":"Mostrar Tarefas",
+    "ProjectOptionsEdit":"Editar Projeto",
+    "ProjectOptionsDelete":"Apagar Projeto"
+}

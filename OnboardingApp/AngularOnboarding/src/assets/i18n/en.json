@@ -1,0 +1,13 @@
+{
+    "Title": "IPN LIS - Onboarding Task",
+    "Hello": "Hello ",
+    "ProjectsTitle": "Projects",
+    "logout": "Log out",
+    "ProjectId":"Project ID",
+    "ProjectName":"Project Name",
+    "ProjectBudget":"Project Budget",
+    "ProjectOptions":"Options",
+    "ProjectOptionsShowTasks":"Show Tasks",
+    "ProjectOptionsEdit":"Edit Project",
+    "ProjectOptionsDelete":"Delete Project"
+}

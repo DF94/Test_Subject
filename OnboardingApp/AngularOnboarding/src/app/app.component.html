@@ -1,0 +1,54 @@
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-4 justify-content-center mb-md-0">
+          <li><h3>{{'Title'|translate}}</h3></li>
+        </ul>
+
+        <span class="form-inline">
+          <select class="form-control"
+          #selectedLang
+          (change)="switchLanguage(selectedLang.value)"> 
+        <option *ngFor="let language of translate.getLangs()"
+        [value]="language"
+        [selected]="language === translate.currentLang">
+          {{language}}
+        </option>
+        </select>
+        </span>
+
+        <div class="text-end" *ngIf='!isUserAuthenticated'>
+          <!--<button type="button" routerLink="" class="btn btn-outline-light me-2">Index_TEST</button>-->
+          <button type="button" routerLink="login" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" routerLink="register" class="btn btn-warning">Sign-up</button>
+        </div>
+
+        <div class="text-end" *ngIf='isUserAuthenticated'>
+          <!--<button type="button" routerLink="" class="btn btn-outline-light me-2">Index_TEST</button>-->
+          <button type="button" routerLink="project" class="btn btn-outline-light me-2">Projects</button>
+          <label> &nbsp; {{'Hello'|translate}} {{userName}}!&nbsp;&nbsp; </label>
+          <button type="button" routerLink="" class="btn btn-outline-light me-2" (click)="logout()">{{'logout'|translate}}</button>
+        </div>
+      </div>
+    </div>
+</header>
+
+<div class="container justify-content-md-center">
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<div class="footer">
+  <p style="text-align:left;">
+    Author: Diogo Figueira
+    <span style="float:right;">
+        Trademark &#169; All Rights Reserved
+    </span>
+  </p>
+</div>
+
